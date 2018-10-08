@@ -1,0 +1,22 @@
+nav {
+  &.navbar {
+    .navbar-brand {
+      color: $brown;
+    }
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          color: $brown;
+        }
+      }
+    }
+  }
+}
+
+.callout {
+  .svg-inline--fa {
+    &.heading {
+      background: $pink;
+    }
+  }
+}

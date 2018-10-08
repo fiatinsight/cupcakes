@@ -103,7 +103,7 @@ a:hover, button:hover {
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
-  --pink: #e83e8c;
+  --pink: #fcb4d7;
   --red: #dc3545;
   --orange: #fd7e14;
   --yellow: #ffc107;
@@ -515,7 +515,7 @@ samp {
 
 code {
   font-size: 87.5%;
-  color: #e83e8c;
+  color: #fcb4d7;
   word-break: break-word; }
   a > code {
     color: inherit; }
@@ -6594,7 +6594,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Bitter", serif;
   font-weight: bold;
   color: #555a69; }
   h1 .blue,
@@ -6603,7 +6603,7 @@ h6 {
   h4 .blue,
   h5 .blue,
   h6 .blue {
-    color: #2196f3; }
+    color: #007bff; }
   h1 .svg-inline--fa,
   h2 .svg-inline--fa,
   h3 .svg-inline--fa,
@@ -6620,6 +6620,10 @@ h2 {
   font-size: 1.8rem;
   margin-bottom: 1.5rem; }
 
+h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem; }
+
 h5 {
   font-size: 1.2rem;
   line-height: 1.6rem;
@@ -6629,6 +6633,9 @@ h6 {
   font-size: 1rem;
   line-height: 1.5rem;
   margin-bottom: 1.5rem; }
+
+p {
+  font-family: "Open Sans", sans-serif; }
 
 .layer-0 {
   box-shadow: none;
@@ -6731,6 +6738,32 @@ section {
         background: #9191ff; }
       section .diagonals.blue :nth-child(6) {
         background: #a3a7ff; }
+    section .diagonals.teal {
+      background: linear-gradient(150deg, #99ffdc 15%, #adfff0 60%, #c8ffff 98%); }
+      section .diagonals.teal :first-child {
+        background: #91fdda; }
+      section .diagonals.teal :nth-child(2) {
+        background: #aaffe6; }
+      section .diagonals.teal :nth-child(3) {
+        background: #91fdda; }
+      section .diagonals.teal :nth-child(4) {
+        background: #91fdda; }
+      section .diagonals.teal :nth-child(5) {
+        background: #91fdda; }
+      section .diagonals.teal :nth-child(6) {
+        background: #aaffe6; }
+    section .diagonals.pink {
+      background: linear-gradient(150deg, #fcc9eb 15%, #fde7fa 70%, #fff0fe 94%); }
+      section .diagonals.pink :first-child {
+        background: #fdc3e6; }
+      section .diagonals.pink :nth-child(2) {
+        background: #fccbed; }
+      section .diagonals.pink :nth-child(3) {
+        background: #fdc3e6; }
+      section .diagonals.pink :nth-child(4) {
+        background: #fccbed; }
+      section .diagonals.pink :nth-child(5) {
+        background: #fccbed; }
 
 header {
   padding-top: 150px; }
@@ -6749,7 +6782,7 @@ header {
 .callout h5 {
   font-size: 0.8rem;
   text-transform: uppercase;
-  background: #fcd733;
+  background: #ffc107;
   color: #555a69;
   display: inline-block;
   padding: 0 0.75rem;
@@ -6764,7 +6797,7 @@ header {
 .callout .svg-inline--fa.heading {
   color: #fff;
   font-size: 3rem;
-  background: #fcd733;
+  background: #ffc107;
   padding: 1rem;
   width: 5rem;
   height: 5rem;
@@ -6779,6 +6812,9 @@ header {
   .sheet h2 {
     color: #555a69;
     font-size: 1.4rem; }
+  .sheet h3 {
+    color: #555a69;
+    font-size: 1.3rem; }
   .sheet h6 {
     color: #555a69;
     font-weight: normal; }
@@ -6813,18 +6849,18 @@ header {
   .btn .svg-inline--fa {
     opacity: 0.7; }
   .btn.btn-primary {
-    background: #2196f3;
-    border: 1px solid #2196f3; }
+    background: #007bff;
+    border: 1px solid #007bff; }
     .btn.btn-primary:hover {
-      background: #2196f3;
-      border: 1px solid #2196f3;
+      background: #007bff;
+      border: 1px solid #007bff;
       opacity: .9; }
   .btn.btn-success {
-    background: #14d584;
-    border: 1px solid #14d584; }
+    background: #17bb77;
+    border: 1px solid #17bb77; }
     .btn.btn-success:hover {
-      background: #14d584;
-      border: 1px solid #14d584;
+      background: #17bb77;
+      border: 1px solid #17bb77;
       opacity: .9; }
   .btn.btn-link {
     background: transparent;
@@ -6837,22 +6873,47 @@ header {
       text-decoration: none; }
 
 nav {
-  font-family: "Lato", sans-serif; }
+  font-family: "Bitter", serif; }
   nav.navbar {
     z-index: 1;
     background: transparent; }
     nav.navbar .navbar-brand {
       color: #fff;
-      font-size: 1.5rem; }
+      font-size: 1.5rem;
+      font-weight: bold; }
     nav.navbar .navbar-nav .nav-item .nav-link {
       color: #fff;
       font-size: 1.1rem;
-      font-weight: 300; }
+      font-weight: 300;
+      padding: 0 1rem; }
       nav.navbar .navbar-nav .nav-item .nav-link:hover {
         opacity: 0.8; }
 
 .bg-light-gray {
   background: #f4f4f7 !important; }
 
+.bg-dark-gray {
+  background: #555a69 !important;
+  color: #fff !important; }
+
 .bg-blue {
-  background: #2196f3 !important; }
+  background: #007bff !important;
+  color: #fff !important; }
+
+.bg-pink {
+  background: #fcb4d7 !important;
+  color: #fff !important; }
+
+.text-brown {
+  color: #54301a !important; }
+
+.text-pink {
+  color: #fcb4d7 !important; }
+
+nav.navbar .navbar-brand {
+  color: #54301a; }
+nav.navbar .navbar-nav .nav-item .nav-link {
+  color: #54301a; }
+
+.callout .svg-inline--fa.heading {
+  background: #fcb4d7; }
