@@ -1,3 +1,7 @@
+body {
+  background: rgb(255,240,254);
+}
+
 nav {
   &.navbar {
     .navbar-brand {
@@ -19,4 +23,8 @@ nav {
       background: $pink;
     }
   }
+}
+
+.footer {
+  background: rgb(255,240,254);
 }

@@ -18,6 +18,7 @@ section {
     transform-origin: 0;
     position: absolute;
     top: 0;
+    z-index: -1;
     span {
       height: 180px;
       position: absolute;

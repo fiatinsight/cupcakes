@@ -6611,6 +6611,20 @@ h6 {
   h5 .svg-inline--fa,
   h6 .svg-inline--fa {
     opacity: 0.5; }
+  h1 a,
+  h2 a,
+  h3 a,
+  h4 a,
+  h5 a,
+  h6 a {
+    color: inherit; }
+    h1 a:hover,
+    h2 a:hover,
+    h3 a:hover,
+    h4 a:hover,
+    h5 a:hover,
+    h6 a:hover {
+      color: inherit; }
 
 h1 {
   font-size: 3rem;
@@ -6684,7 +6698,8 @@ section {
     -webkit-transform-origin: 0;
     transform-origin: 0;
     position: absolute;
-    top: 0; }
+    top: 0;
+    z-index: -1; }
     section .diagonals span {
       height: 180px;
       position: absolute; }
@@ -6776,6 +6791,11 @@ header {
 
 .callout h3 {
   font-size: 1.5rem;
+  margin: 10px 0 0;
+  padding: 0;
+  line-height: 1.3em; }
+.callout h4 {
+  font-size: 1.2rem;
   margin: 10px 0 0;
   padding: 0;
   line-height: 1.3em; }
@@ -6889,6 +6909,15 @@ nav {
       nav.navbar .navbar-nav .nav-item .nav-link:hover {
         opacity: 0.8; }
 
+form {
+  font-family: "Open Sans", sans-serif; }
+  form .form-group input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 1.5rem; }
+
 .bg-light-gray {
   background: #f4f4f7 !important; }
 
@@ -6910,6 +6939,9 @@ nav {
 .text-pink {
   color: #fcb4d7 !important; }
 
+body {
+  background: #fff0fe; }
+
 nav.navbar .navbar-brand {
   color: #54301a; }
 nav.navbar .navbar-nav .nav-item .nav-link {
@@ -6917,3 +6949,6 @@ nav.navbar .navbar-nav .nav-item .nav-link {
 
 .callout .svg-inline--fa.heading {
   background: #fcb4d7; }
+
+.footer {
+  background: #fff0fe; }

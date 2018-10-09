@@ -19,6 +19,12 @@ h6 {
   .svg-inline--fa {
     opacity: 0.5;
   }
+  a {
+    color: inherit;
+    &:hover {
+      color: inherit;
+    }
+  }
 }
 
 h1 {
