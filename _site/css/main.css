@@ -6933,6 +6933,9 @@ form {
   background: #fcb4d7 !important;
   color: #fff !important; }
 
+.bg-transparent {
+  background: transparent !important; }
+
 .text-brown {
   color: #54301a !important; }
 
@@ -6949,6 +6952,8 @@ nav.navbar .navbar-nav .nav-item .nav-link {
 
 .callout .svg-inline--fa.heading {
   background: #fcb4d7; }
+.callout h5 span {
+  background: none; }
 
 .footer {
   background: #fff0fe; }
