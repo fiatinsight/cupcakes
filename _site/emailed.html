@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Delicious, beautiful, made-from-scratch cupcakes" />
+	<meta name="robots" content="noodp"/>
+	<title>Farm Fresh Cupcakes | Winchester, VA</title>
+
+	<link rel="stylesheet" href="/css/main.css">
+	<script src="/js/fontawesome-all.min.js" type="text/javascript"></script>
+	<link rel="canonical" href="http://localhost:4000/emailed">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700" rel="stylesheet">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700" rel="stylesheet"> -->
+	<link href="https://fonts.googleapis.com/css?family=Bitter:400,700" rel="stylesheet">
+
+
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Farm Fresh Cupcakes" />
+	<meta property="og:description" content="Delicious, beautiful cupcakes made from scratch" />
+	<meta property="og:url" content="http://localhost:4000/emailed" />
+	<meta property="og:site_name" content="Farm Fresh Cupcakes" />
+	<meta property="og:image" content="https://s3.amazonaws.com/farmfreshcupcakes/image6.jpeg" />
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+
+	<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-37022775-5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-37022775-5');
+  </script> -->
+</head>
+
+
+<body>
+	<main>
+		<section>
+	<nav class="navbar navbar-expand-lg">
+		<div class="container">
+		  <a class="navbar-brand" href="/">Farm Fresh Cupcakes</a>
+	  </div>
+	</nav>
+	<header>
+		<div class="diagonals white">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	  <div class="container slideUp">
+	    <div class="row pb-lg-5">
+	      <div class="col-lg-6 callout white pb-5 pb-lg-0">
+					<h5 class="layer-1 bg-pink">Success</h5>
+	        <h1 class="text-brown">Thanks for emailing</h1>
+	        <h3 class="text-brown"><i class="fal fa-envelope mr-3"></i>We'll be in touch, soon!</h3>
+	      </div>
+				<div class="col-lg-6 pb-5 pb-lg-0">
+					<div class="sheet layer-3">
+						<img src="https://s3.amazonaws.com/farmfreshcupcakes/cake-top.jpg" width="100%">
+					</div>
+				</div>
+	    </div>
+	  </div>
+	</header>
+</section>
+
+<section id="order" class="pb-lg-2">
+	<div class="diagonals pink">
+		<span></span>
+		<span></span>
+	</div>
+	<div class="container pb-lg-2">
+		<div class="row justify-content-around pb-lg-5">
+			<div class="col-lg-5 callout py-5">
+				<h1><i class="far fa-box-heart mr-3"></i>Order</h1>
+				<h6 class="p-0">To place an order, just leave us a message, here.</h6>
+				<form action="https://formspree.io/kathleen.n.haines@gmail.com" method="POST" class="pb-5">
+				  <div class="form-group">
+				    <label for="name" class="sr-only">Name</label>
+				    <input type="text" class="form-control" id="input-name" aria-describedby="name" placeholder="Your name" name="name" required>
+				  </div>
+					<div class="form-group">
+						<label for="email" class="sr-only">Email</label>
+				    <input type="email" class="form-control" id="input-email" aria-describedby="email" placeholder="Your email" name="email" required>
+				  </div>
+				  <div class="form-group">
+				    <label for="order_size" class="sr-only">Order size</label>
+				    <select class="form-control" id="input-project" name="order_size" required>
+				      <option value="How many dozen would you like?">How many dozen would you like?</option>
+							<option value="Less than 5 dozen">Less than 5 dozen</option>
+							<option value="5 to 10 dozen">5 to 10 dozen</option>
+							<option value="More than 10 dozen">More than 10 dozen</option>
+				    </select>
+				  </div>
+					<div class="form-group">
+				    <label for="order_date" class="sr-only">Order date</label>
+				    <select class="form-control" id="input-timeline" name="order_date" required>
+				    	<option value="How soon would you like them?">How soon would you like them?</option>
+							<option value="Right now (rush delivery)">Right now (rush delivery)</option>
+							<option value="In 2 weeks">In 2 weeks</option>
+							<option value="In a month">In a month</option>
+							<option value="More than a month from now">More than a month from now</option>
+				    </select>
+				  </div>
+					<div class="form-group">
+				    <label for="order_details" class="sr-only">Order details / flavor(s)</label>
+				    <textarea class="form-control" id="input-details" rows="3" placeholder="Tell us what flavor(s) you'd like and any details about your order..." name="order_details"></textarea>
+						<input type="hidden" name="_next" value="/emailed.html" />
+						<input type="text" name="_gotcha" style="display:none" />
+				  </div>
+				  <button type="submit" class="btn btn-secondary" id=”contact-submit” value="Send">Submit my order<i class="far fa-arrow-right ml-2" aria-hidden="true"></i></button>
+				</form>
+			</div>
+			<div class="col-lg-4 callout py-5">
+				<h5 class="bg-pink">Contact</h5>
+				<h6 class="p-0">For other inquries, or just to say hi, you can reach out to us at:</h6>
+				<h2>Farm Fresh Cupcakes</h2>
+				<h4><i class="far fa-map-marker-alt mr-3"></i>Winchester, Virginia</h4>
+				<h4><i class="far fa-envelope mr-3"></i><a href="mailto:kathleen.n.haines@gmail.com">kathleen.n.haines@gmail.com</a></h4>
+				<h4><i class="far fa-phone mr-3"></i><a href="tel:5404211343">540.421.1343</a></h4>
+			</div>
+		</div>
+	</div>
+</section>
+
+	</main>
+</body>
+
+<section class="footer layer-1">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12">
+        <h6 class="text-center">Developed with <i class="far fa-heart"></i> by <a href="https://fiatinsight.com" target="_blank">Fiat Insight</a></h6>
+      </div>
+    </div>
+  </div>
+</section>
+
+</html>
